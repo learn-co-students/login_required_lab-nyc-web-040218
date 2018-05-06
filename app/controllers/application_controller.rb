@@ -8,10 +8,10 @@ class ApplicationController < ActionController::Base
   end
 
   def index
-    if !session[:name] && session[:name] != nil
+    if !session[:name] || session[:name] == nil
       redirect_to '/sessions/new'
     else
-      
+      redirect_to '/secrets/show'
     end
   end
 
