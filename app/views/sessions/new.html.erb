@@ -1,0 +1,6 @@
+<h1>Please Login Below:</h1>
+
+<%= form_tag('/sessions/new', method:'post') %>
+    <%= label_tag :name %>: 
+    <%= text_field_tag :name %><br><br>
+    <%= submit_tag("Search") %>
